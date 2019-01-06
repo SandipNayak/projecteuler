@@ -1,7 +1,7 @@
 pacakge codex;
 
 
-public class q_6_ {
+public class q6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
