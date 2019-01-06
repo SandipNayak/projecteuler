@@ -1,35 +1,27 @@
-package codex;
+pacakge codex;
+
 
 public class q7 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		 long c1=0,i=2,prime=0;
-		 int ctr=0;
-		 while(i>0)
-		 {
-			 for(long k=1;k<=Math.sqrt(i);k++)
-			 {
-				 if(i%k==0)
-				 {
-					 ctr++;
-				 }
-			 }
-			 if(ctr==1)
-			 {
-				 c1++;
-			 }
-			 if(c1==10001)
-			 {
-				 prime=i;
-				 break;
-			 }
-			 i++;
-			 ctr=0;
-		 }
-		 System.out.println("1oo1st prime is:"+prime);
+int i;int n=1;int c=0;int prime=0;
+while(prime!=10001)
+{
+	for(i=2;i<=Math.sqrt(n);i++)
+	{
+		if(n%i==0)
+		{
+			c++;
+			break;
+		}
+	}
+		if(c==0)
+		prime++;
+		if(prime==10001)
+			System.out.println(n);
+		c=0; n+=2;
 }
+	}
 
-	
 }
